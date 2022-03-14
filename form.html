@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Complete the form below to join us and have loads of fun!">
+	<meta name="keywords" content="pike, fishing, club, nature, mindfulness, fun, sligo">
+	<meta name="author" content="PikeForFun">
+	<title>Join our pike-fishing community</title>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<header class="form-page-header page-header text-center">
+		<div class="vertical-center">
+			<h1>Join our pike-fishing community</h1>
+			<p><strong>Complete the form below to join us and have loads of fun!</strong></p> 
+		</div>
+	</header>
+
+	
+	<nav class="black-background text-center text-uppercase">
+		<a href="index.html#home" aria-label="Go to the top of the page">Who we are</a>
+		<a href="index.html#ourgoals" aria-label="Go to our goals section">Our Goals</a>
+		<a href="index.html#contact" aria-label="Go to contact information section">Contact</a>
+		<a href="form.html" aria-label="Join PikeForFun">Join PikeForFun</a>
+	</nav>
+	
+	<form action="https://formdump.codeinstitute.net" method="POST">
+
+	<fieldset>
+		<legend>Your details</legend>
+
+		<div class="float-left">
+			<label for="name-field" class="block-label">Name</label>
+			<input id="name-field" type="text" name="full_name" placeholder="Your name" required>
+		</div>
+		<div class="float-left">
+			<label for="email-field" class="block-label">Email</label>
+			<input id="email-field" type="email" name="email" placeholder="Your email" required>
+		</div>
+
+		<label for="age" class="block-label">Age</label>
+		<select id="age" name="age" required>
+			<option value="">Under 20</option>
+			<option value="20s">20-29</option>
+			<option value="30s">30-39</option>
+			<option value="40s">40-49</option>
+			<option value="50s">50-59</option>
+			<option value="60+">60+</option>
+		</select>
+
+	</fieldset>
+
+		
+		<fieldset>
+			<legend>Your fishing profile</legend>
+			<div>
+				<label for="favfishing-bait" class="block-label">What is your favourite pike fishing bait?</label>
+				<input id="favfishing-bait" list="baits" name="favfishing-bait" required>
+				<datalist id="baits">
+					<option value="Rapalla">
+					<option value="Spinnerbait">
+					<option value="Miuras Mouse">
+					<option value="Spoon">
+					<option value="Topwater Lure">
+					<option value="Dead Bait">
+				</datalist>
+			</div>
+
+			<p>How many cups pikes have you caught the last season?</p>
+
+			<input id="0-2pikes-radio" name="pikes-per-season" value="0-2pikes" type="radio" required>
+			<label for="0-2pikes-radio">0 to 2 pikes</label>
+
+			<input id="3-5pikes-radio" name="pikes-per-season" value="3-5pikes" type="radio" required>
+			<label for="3-5pikes-radio">3 to 5 pikes</label>
+
+			<input id="6-8pikes-radio" name="pikes-per-season" value="6-8pikes" type="radio" required>
+			<label for="6-8pikes-radio">6 to 8 pikes</label>
+
+			<input id="9plus-pikes-radio" name="pikes-per-season" value="9plus-pikes" type="radio" required>
+			<label for="9plus-pikes-radio">9 or more pikes</label>
+
+			<p>How often do you go fishing?</p>
+
+			<input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio" required>
+			<label for="once-a-week">Once a week</label>
+
+			<input id="twice-a-week" name="visit-frequency" value="twice-a-week" type="radio" required>
+			<label for="twice-a-week">Twice a week</label>
+
+			<input id="once-a-fortnight" name="visit-frequency" value="once-a-fortnight" type="radio" required>
+			<label for="once-a-fortnight">Once a fortnight</label>
+
+			<input id="not-often" name="visit-frequency" value="not-often" type="radio" required>
+			<label for="not-often">Not often</label>
+
+			<p>Which pike-fishing place around Sligo do you enjoy the most?</p>
+			<div>
+				<input type="checkbox" id="garavogueriver-checkbox" name="garavogueriver">
+				<label for="garavogueriver-checkbox">Garavogue River</label>
+			</div>
+			<div>
+				<input type="checkbox" id="templehouse-checkbox" name="templehouse">
+				<label for="templehouse-checkbox">Templehouse Lake</label>
+			</div>
+			<div>
+				<input type="checkbox" id="owenmore-checkbox" name="owenmore">
+				<label for="owenmore-checkbox">Owenmore River</label>
+			</div>
+			<div>
+				<input type="checkbox" id="lougharrow-checkbox" name="lougharrow">
+				<label for="lougharrow-checkbox">Lough Arrow Lake</label>
+			</div>
+			<div>
+				<input type="checkbox" id="loughgill-checkbox" name="loughgill">
+				<label for="loughgill-checkbox">Lough Gill Lake</label>
+			</div>	
+		</fieldset>
+
+		<fieldset>
+			<legend>Best fishing adventure</legend>
+			<label for="bestfishingadventure" class="block-label">Share with us your best fishing adventure</label>
+			<br>
+			<textarea id="bestfishingadventure" rows="4" cols="87" name="bestfishingadventure"></textarea>
+		</fieldset>
+        <div id="terms">
+            <h5 class="underline">OFFICIAL RULES FOR FISHING IN IRELAND</h5>
+            <p>In the Republic of Ireland, a State Licence is required to fish for both salmon and sea trout. You usually need to buy a local permit in addition to your State Licence before fishing.
+
+            For trout, pike and coarse fishing, a licence is not required (but you may need to purchase a local permit). You can fish in the sea for almost all species without the need for a licence or permit.
+
+            In Northern Ireland, you need a licence for all freshwater fishing but not for sea fishing.
+
+            In the Republic of Ireland State Salmon and Sea Trout Licences are available as a National Licence or a District Licence. A National Licence covers all Fishery Board Districts while a District Licence covers only the Fishery District in which the licence is purchased. A list of fishing tackle shops where licences may be bought is available on this site. Alternatively you can buy a licence online.
+
+            It should be noted that a licence does not confer the right to fish for salmon or sea trout and that permission or permits are required to fish most waters.
+
+            Anglers in the Shannon Region must have a Permit (ticket charge) to fish for trout, pike or coarse fish in the Midland Fisheries Group of controlled waters. This area comprises the following river catchments; RIVER SUCK, RIVER INNY, RIVER BROSNA, LITTLE BROSNA RIVER and CAMLIN RIVER. This permit is not required to fish the main River Shannon or other fisheries whose fishing rights are NOT under the control of the Inland Fisheries Ireland.
+
+            For up-to-date information on all licence and permit regulations in Northern Ireland visit the Northern Ireland Tourist Board website.
+
+            Access to Fisheries
+            Anglers must always remember that access does not imply a right of way and should ensure that they have the necessary permission to enter or cross private lands. Respect livestock and crops – where possible, anglers should walk the headlands of fields or along the riverbank or lakeshore.
+
+            Leave No Trace
+            Anglers should ensure that gates are closed and that fences are not damaged or broken. Care should be taken with crops and livestock. Litter must not be discarded and no fires are allowed. Vehicles should be parked in designated areas and in such a manner, as they do not cause obstruction.</p>
+            
+            <p><span class="bold">Eligibility: </span>
+                PikeForFun is a youth-fishing-club and all individuals (i) under 21 years of age are free to join our community.
+                People (i) over 21 are welcomed as Senior Guests for helping us improve our activities</p>
+
+
+            <p><span class="bold">Notification and Acceptance: </span>
+                Accepted Members/Senior Guests will be notified no more than 5 working days after completing the form, via email. 
+            </p>
+
+            <p><span class="bold">Rules: </span>
+                By entering the PikeForFun Community, entrant agrees to abide by the terms and conditions of these
+                Official Rules, which are final on all matters and warrants that
+                he/she is eligible to join the Community. Submission of entry constitutes entrant’s
+                consent for PikeForFun youth fishing club to use entrant’s email address for purposes of marketing and promotion of
+                our products and services.
+            </p>
+        </div>
+
+		<input type="submit" class="block-label" value="Join PikeForFun">
+		<input type="reset" value="Reset Form">
+
+	</form>
+	
+</body>
+
+</html>
